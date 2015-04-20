@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/application.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<title>Twitter Frontend Clone</title>
+</head>
+<body>
+	<div class='wrapper'>
+		<div id="bg" class="front-bg shadow">
+			<img class="front-image" src="images/fb1.jpg" alt style="display: block;">
+			<img class="front-image" src="images/fb2.jpg" alt style="display: block;">
+			<img class="front-image" src="images/fb3.jpg" alt style="display: block;">
+		</div>
+		  <div class="navbar">
+		  	<a class brand="brand" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+		  <div class="pull-right">
+		  	<ul class="nav">
+		  		<li class="active"><a href="#" class="dropdown-toggle" role="button" id="lang-menu">Language: English<b class="caret"></b></a></li>
+		  	</ul>
+		  </div>
+		  </div>
+	<div class='container'>
+	<div class='front-card'>
+			<div class="front-welcome-text">
+				<h1>Welcome to Twitter.</h1>
+				<p>Connect with your friends — and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.</p>
+			</div>
+
+		<div class = 'signin-signup'>
+			<div class="front-signin">
+				<form class="signin-form">
+					<div class="username">
+						<input type="text" id="signin-username" class="text-input email-input" placeholder="Phone, email or username">
+					</div>
+					<div class="password-input">
+						<input type="password" id="signin-password" class="text-input" placeholder="Password"><button id="login" type="submit" class="submit btn primary-btn">Log In</button>
+
+					</div>
+
+					<div class="remember-forgot">
+						<label>
+							<input type="checkbox" value="1" checked="checked">
+							<span>Remember Me</span>
+						</label>
+						<!-- Span Here to create space in design if wanted. -->
+						<a class="forgot" href="#">Forgot password?</a>
+					</div>
+				</form>
+			</div>
+			<div class="front-signup">
+			<h2><strong>New to Twitter?</strong>
+				Sign Up
+			</h2>
+				<form class="form-signup" method="post">
+					<div class="field">
+						<input id="username-signup" type="text" class="text-input" name="user[name]" maxlength="20" placeholder="Full Name">
+					</div>
+					<div class="field">
+						<input id="email-signup" type="text" class="text-input" name="user[email]" placeholder="Email">
+					</div>
+					<div class="field">
+						<input id="password-signup" type="password" class="text-input" name="user[user_password]" placeholder="Password">
+					</div>
+					<button id="sign-up-button" type="submit" class="btn signup-btn u-floatRight"> 
+					Sign Up for Twitter
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+      <div class="footer">
+      	<ul class="list-inline">
+      	<li><a href="#">About</a></li>
+      	<li><a href="#">Help</a></li>
+      	<li><a href="#">Blog</a></li>
+      	<li><a href="#">Status</a></li>
+      	<li><a href="#">Jobs</a></li>
+      	<li><a href="#">Terms</a></li>
+      	<li><a href="#">Privacy</a></li>
+      	<li><a href="#">Cookies</a></li>
+      	<li><a href="#">Ads info</a></li>
+      	<li><a href="#">Brands</a></li>
+      	<li><a href="#">Advertises</a></li>
+      	<li><a href="#">Businesses</a></li>
+      	<li><a href="#">Media</a></li>
+      	<li><a href="#">Developers</a></li>
+      	<li><a href="#">Cricket</a></li>
+      	<li><a href="#">Directory</a></li>
+      	<li><a href="#">© 2015 Twitter</a></li>
+      	</ul>
+      </div>
+
+		</div>
+	</div>
+</body>
+</html>

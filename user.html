@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/user.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="css/user.css" rel="stylesheet">
+    <link href="https://abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<title>Twitter Frontend Clone</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div role="navigation" style="display: inline-block;">
+			<ul class="list-inline" id="global-actions">
+				<li id="home" class="home active new">
+					<a href="#"><span class="homeicon"><i class="fa fa-home fa-2x"></i>Home</span></a>
+				</li>
+				<li id="notice" class="home active new">
+					<a href="#"><span class="noticeicon"><i class="fa fa-bell fa-2x"></i>Notifications</span></a>
+				</li>
+				<li id="messages" class="home active new">
+					<a href="#"><span class="messagesicon"><i class="fa fa-envelope fa-2x"></i>Messages</span></a>
+				</li>
+				<li id="discover" class="home active new">
+					<a href="#"><span class="discovericon"><i class="fa fa-binoculars fa-2x"></i>Discover
+				</li>
+			</ul>
+		</div>
+
+	<a class brand="brand" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+
+	<div class="pull-right" style="display: inline-block;">
+	<div role="search">
+		<form = id="nav-search">
+			<input class="search-input" type="text" id="search" placeholder="Search Twitter" spellcheck="false">
+			<span id="searchButton"><button type="submit" class="searchButton"><i class="fa fa-search"></i></button></span>
+		</form>
+	<ul class="list-inline right-actions">
+		<li class="me" id="user">
+			<a href="#" id="user-dropdownmenu" role="button">
+				<img class="avatar" src="https://pbs.twimg.com/profile_images/505906614247776256/3eN7fxto_normal.jpeg" alt="Profile and Settings">
+			</a>
+		</li>
+		<li class="newTweet">
+			<button id="newTweetButton" type="button" class="btn primary-btn"><span class="tweetIcon"><i class="fa fa-paper-plane fa-1x"></i></span>
+		</li>
+	</ul>
+	</div>
+
+	</div>
+	
+	</div>
+</nav>
+
+<div class="wrapper">
+	<div id="main" class="container">
+	<div class="dashboard dashboard-left">
+		<div class="DashboardProfileCard">
+			<a href="#"><img id="DashboardProfileCardBg" src="https://pbs.twimg.com/profile_banners/37210906/1398327676/600x200"></a>
+			<div class="DashboardProfileCard-content">
+				<a class="DashboardProfileCard-avatar" href="#">
+					<img class="DashboardProfileCard-avatarImage" src="https://pbs.twimg.com/profile_images/505906614247776256/3eN7fxto_bigger.jpeg">
+				</a>
+				<div class="DashboardProfileCard-userFields">
+					<div class="profileName">
+						<a href="#">Michael Chow</a>
+					</div>
+						<span class="screenName">
+							<a href="#">@<span>DexVitalitY</span></a>
+						</span>
+				</div>
+				<div class="DashboardProfileCard-stats">
+					<ul class="statList list-inline">
+						<li id="tweets">
+							<a href="#">
+								<span>TWEETS</span>
+								<span>6,520</span>
+							</a>
+						</li>
+						<li id="following">
+							<a href="#">
+								<span>FOLLOWING</span>
+								<span>126</span>
+							</a>
+						</li>
+						<li id="followers">
+							<a href="#">
+								<span>FOLLOWERS</span>
+								<span>125</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+	</div>
+
+	<div role="main" class="content-main" id="timeline">
+		<div class="timeline-tweet">
+			<div class="home-tweet-box">
+				<img class="home-tweet-box" src="https://pbs.twimg.com/profile_images/505906614247776256/3eN7fxto_normal.jpeg">
+				<form method="post">
+					<div class="tweet-content">
+						<input id="tweet-content-input" type="text" class="text-input" placeholder="What's Happening?"><button id="postTweet" class="btn btn-primary">Tweet</button>
+						<input id="tweet-delete" type="text" class="text-input" placeholder="Delete Tweet - Input ID Here"><button id="deleteTweet" class="btn btn-danger">Delete</button>
+						<input id="search-user" type="text" class="text-input" placeholder="Search User Tweets"><button id="searchUser" class="btn btn-primary">Search For User
+						</button>
+						<input id="search-tweet" type="text" class="text-input" placeholder="Search Tweet by ID"><button id="searchID" class="btn btn-primary">Search for Tweet
+						</button>
+
+					</div>
+				</form>
+			</div>
+			<div id="stream-container">
+				<div class="stream-item">Tweets Here:</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>
